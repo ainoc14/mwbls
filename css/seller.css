@@ -293,6 +293,19 @@ header .navigation li a{
         letter-spacing: 0;
         font-size: 0.8rem;
     }
+    header .topOfNav .logo img{
+        height: 25px;
+    }
+
+    .logoutContainer{
+        right: 0;
+    }
+
+    .profileIcon{
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
 /* shopping-cart */
@@ -573,9 +586,11 @@ th{
     letter-spacing: 5px;
 }
 
-.add-item:hover{
-background-color: rgb(184, 173, 173);
-color:  rgb(133, 101, 78);
+.add-item:hover,
+.add-item:focus{
+    background-color: rgba(92, 54, 27, 0.973);
+    color: white;
+    border-color: rgb(158, 135, 119);
 }
 .alertListing{
     display: flex;
@@ -665,10 +680,11 @@ section form label{
     padding: 5px;
 }
 
-#submitBtn:hover{
-    background-color: rgb(184, 173, 173);
-    color: rgb(133, 101, 78);
-    border: none;
+#submitBtn:hover,
+#submitBtn:focus{
+    background-color: rgba(92, 54, 27, 0.973);
+    color: white;
+    border-color: rgb(158, 135, 119);
     cursor: pointer;
 }
 

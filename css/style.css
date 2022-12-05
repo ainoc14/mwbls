@@ -288,8 +288,20 @@ header .navigation li a{
     .announcement{
         letter-spacing: 0;
         font-size: 0.8rem;
-    
     }
+    header .topOfNav .logo img{
+        height: 25px;
+    }
+
+    .logoutContainer{
+        right: 0;
+    }
+
+    .profileIcon{
+        width: 40px;
+        height: 40px;
+    }
+
 
     header .topOfNav .logo img{
         height: 25px;
