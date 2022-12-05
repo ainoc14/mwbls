@@ -241,7 +241,7 @@ header .navigation li a{
         width: 100%;
     }
     .menu li a {
-        padding: 30px;
+        padding: 0 20px;
         font-size: 24px;
     }
 }

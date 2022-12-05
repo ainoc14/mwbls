@@ -82,7 +82,8 @@ header .navigation ul {
 }
 header .navigation li {
     list-style: none;
-    padding: 20px;
+    padding: 10px;
+    margin: 10px;
     font-size: 1.5em;
 }
 header .navigation li a {
@@ -280,7 +281,7 @@ header .navigation li a {
     }
 
     .menu li a {
-        padding: 30px;
+        padding: 0 20px;
         font-size: 24px;
     }
 }
@@ -1264,6 +1265,19 @@ footer .contacts div i {
         font-size: 0.67rem !important;
         font-weight: 700;
         letter-spacing: 0 !important;
+    }
+
+    header .topOfNav .logo img{
+        height: 25px;
+    }
+
+    .logoutContainer{
+        right: 0;
+    }
+
+    .profileIcon{
+        width: 40px;
+        height: 40px;
     }
 
     .carouselContainer h1,
