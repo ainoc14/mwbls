@@ -54,7 +54,7 @@ header {
     width: 100%;
     z-index: 5;
     /* background-color: rgb(97, 79, 58); */
-    background: url("https://img.freepik.com/free-photo/brown-wooden-textured-flooring-background_53876-128537.jpg?w=1380&t=st=1669947354~exp=1669947954~hmac=02b45c73e67373c4bacb39dd0b3d1aa78131e8e078efc734b7933c7c762f0159");
+    background: url("../images/navbar-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
