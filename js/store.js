@@ -1,7 +1,6 @@
 function closeCart() {
   const cart = document.querySelector('.productsOnCart');
   cart.classList.toggle('hide');
-  document.querySelector('body').classList.toggle('stopScrolling')
 }
 
   const openShopCart = document.querySelector('.shoppingCartButton');
