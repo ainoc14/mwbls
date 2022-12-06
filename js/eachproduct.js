@@ -103,10 +103,6 @@ updateCartTotal();
 }
 }
 
-document.getElementsByClassName("subTotalPrice")[0].innerText = localStorage.getItem("subTotalPrice")
-document.getElementsByClassName("deliveryFee")[0].innerText = localStorage.getItem("checkoutFee")
-document.getElementsByClassName("totalPrice")[0].innerText = localStorage.getItem("totalPrice");
-
 
 let cartItems = document.getElementsByClassName("buyItems")[0];
 let cartDiv = cartItems.getElementsByClassName("cartContainer")
@@ -120,7 +116,6 @@ function removeCart1(){
 
   count--;
   counter.innerHTML = count;
-  localStorage.setItem("cartCount", counter.innerHTML)
   if (count == 0){
     counter.innerHTML = '';
     counter.classList.remove("badgeStyle");
@@ -135,25 +130,8 @@ function removeCart1(){
  
   console.log(allProducts);
 
-  localStorage.setItem("allEntries", JSON.stringify(allProducts));
   updateCartTotal()
 
-}
-
-let retrieveData = localStorage.getItem("allEntries")
-let allProducts2 = JSON.parse(retrieveData);
-
-for (let i in allProducts2){
-
-  let cartItems = document.querySelector("#buyItems");
-
-  let cartDiv = document.createElement("div");
-  cartDiv.classList.add("cartContainer");
-  
-  cartDiv.innerHTML = allProducts2[i];
-  cartItems.appendChild(cartDiv);
-
-  cartDiv.getElementsByClassName("removeBtn")[0].addEventListener("click", removeCart)
 }
 
 function updateCartTotal(){
@@ -188,7 +166,7 @@ function updateCartTotal(){
     }
     subtotal = subtotal + (price * quantity);
     total = subtotal + deliveryFee;
-    localStorage.setItem("eachQuantity", quantity);
+
 
   }
   subtotal = Math.round(subtotal);
@@ -198,9 +176,6 @@ function updateCartTotal(){
   document.getElementsByClassName("deliveryFee")[0].innerText = 'P ' + deliveryFee;
   document.getElementsByClassName("totalPrice")[0].innerText = 'P ' + total;
   
-  localStorage.setItem("subTotalPrice", subtotal)
-  localStorage.setItem("totalPrice", total);
-  localStorage.setItem("checkoutFee", deliveryFee)
 }
 
 
@@ -218,7 +193,7 @@ if (isNaN(input.value) || input.value <= 0){
 
 updateCartTotal();
   
-  localStorage.setItem("quantityValue", input.value);
+
 
   console.log(input.value);
   updateCartTotal();
