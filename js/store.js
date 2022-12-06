@@ -27,7 +27,6 @@ profilePic.src = localStorage.getItem("userImage") || "images/profpic.jpg";
 
 let products =  [
       {
-        id: 1,
         productName: "Acacia Bowl",
         category: "Kitchen",
         price: 500,
@@ -37,7 +36,6 @@ let products =  [
         anchor: "html/acacia bowl.html"
       },
       {
-        id: 2,
         productName: "Narra Rounded Table",
         category: "Tables",
         price: 3500,
@@ -47,7 +45,6 @@ let products =  [
         anchor: "html/narra rounded table.html"
       },
       {
-        id: 3,
         productName: "Gmelina Bed with Drawer",
         category: "Beds",
         price: 2500,
@@ -57,7 +54,6 @@ let products =  [
         anchor: "html/gmelina bed with drawer.html"
       },
       {
-        id: 4,
         productName: "Acacia Chopping Board",
         category: "Kitchen",
         price: 1000,
@@ -67,7 +63,6 @@ let products =  [
         anchor: "html/acacia chopping board.html"
       },
       {
-        id: 5,
         productName: "Natural Wood Sungka",
         category: "Toys",
         price: 1500,
